@@ -218,7 +218,17 @@ body {
 .message {
   color: #f17171;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeInMessage 2s ease-in-out 1s forwards;
+  text-shadow: 0 0 10px rgba(232, 180, 240, 0.5);
+}
+
+.message-dedicatoria{
+  color: #f17171;
+  font-size: 20px;
+  font-weight: 400;
   letter-spacing: 2px;
   opacity: 0;
   animation: fadeInMessage 2s ease-in-out 1s forwards;
