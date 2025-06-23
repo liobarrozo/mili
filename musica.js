@@ -1,6 +1,7 @@
-document.getElementById("musica").volume = 0.05;
-const audio = document.getElementById("musica");
-const boton = document.getElementById("toggleMusica");
+window.addEventListener("load", () => {
+    document.getElementById("musica").volume = 0.05;
+    const audio = document.getElementById("musica");
+    const boton = document.getElementById("toggleMusica");
 
   boton.addEventListener("click", () => {
     if (audio.paused) {
@@ -13,3 +14,6 @@ const boton = document.getElementById("toggleMusica");
         boton.textContent = "Reproducir";
     }
   });
+  })
+
+
