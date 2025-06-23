@@ -7,11 +7,11 @@ window.addEventListener("load", () => {
     if (audio.paused) {
         console.log("Musica en pausa")
         audio.play();
-        boton.textContent = "Pausar";
+        boton.textContent = "▐▐";
     } else {
         console.log("Musica en play")
         audio.pause();
-        boton.textContent = "Reproducir";
+        boton.textContent = "▶";
     }
   });
   })

@@ -231,6 +231,12 @@ body {
   text-shadow: 0 0 10px rgba(232, 180, 240, 0.5);
   padding-bottom: 70px;
 }
+
+@media (max-width: 768px){
+  .titulo-mili{
+    font-size: 75px;
+  }
+}
 .message {
   color: #f17171;
   font-size: 24px;
@@ -287,6 +293,7 @@ body {
 .reproductor{
   opacity: 0;
   animation: fadeInMessage 2s ease-in-out 1s forwards;
+  padding: 25px;
 }
 
 .title-reproductor{
@@ -298,6 +305,33 @@ body {
   width: 135px;
   height: auto;
   margin: 10px;
+}
+
+.nombre-cancion{
+  color: white;
+}
+
+.play-button {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+  background: #d52a2a;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.play-button:hover {
+  background: #ff4f45;
+  transform: scale(1.05);
+}
+
+.play-button:active {
+  transform: scale(0.95);
 }
 
 @keyframes fadeInMessage {
