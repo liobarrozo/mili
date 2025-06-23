@@ -1,5 +1,5 @@
 document.getElementById("musica").volume = 0.05;
-const audio = document.getElementById("cerati");
+const audio = document.getElementById("musica");
 const boton = document.getElementById("toggleMusica");
 
   boton.addEventListener("click", () => {
