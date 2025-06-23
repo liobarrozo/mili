@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ojitos lindos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
     <div class="stars">
@@ -19,6 +21,9 @@
     <div class="moon"></div>
 
     <div class="container">
+        <div class="titulo-mili">
+            Milagros🤍
+        </div>
         <div class="eyes-container">
             <div class="eye" id="leftEye">
                 <div class="eye-glow"></div>
@@ -76,8 +81,23 @@
             <div class="heart" style="bottom: 25%; right: 15%; animation-delay: 3s;">♡</div>
         </div>
         <div class="message-dedicatoria">
-            Con mucho amor de Lio, para Mili 💗
+            <div class="texto-dedicatoria">
+                Con mucho amor de Lio, para Mili 💗
+            </div>
+            <div class="imagen-firma">
+                <img id="imagen-firma_liobarrozo" src="./image/firma.png" alt="">
+            </div>
         </div>
+        <section class="reproductor">
+            <h3 class="title-reproductor">Te dedico esta canciónn</h3>
+            <audio id="musica" autoplay loop>
+              <source src="./image/seeYouAgain.mp3" type="audio/mpeg" />
+              <script defer src="./musica.js"></script>
+            </audio>
+            <img class="album-image" src="./src/TLPQML.jpg" alt="" />
+            <h4>See You Again - Tyler, The Creator</h4>
+            <button id="toggleMusica">Pausar</button>
+          </section>
     </div>
 
     <script src="script.js"></script>
