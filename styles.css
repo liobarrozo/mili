@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body, html {
+  overflow-x: hidden; /* solo oculta el scroll horizontal si querés */
+  overflow-y: auto;
+}
+
+
 body {
   min-height: 100vh;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 25%, #0f3460 50%, #533483 75%, #7209b7 100%);
