@@ -288,6 +288,12 @@ body {
   text-shadow: 0 0 10px rgba(239, 44, 44, 0.5);
 }
 
+.album-image{
+  width: 135px;
+  height: auto;
+  margin: 10px;
+}
+
 @keyframes fadeInMessage {
   to {
     opacity: 1;

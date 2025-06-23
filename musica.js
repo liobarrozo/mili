@@ -4,10 +4,12 @@ const boton = document.getElementById("toggleMusica");
 
   boton.addEventListener("click", () => {
     if (audio.paused) {
-      audio.play();
-      boton.textContent = "Pausar";
+        console.log("Musica en pausa")
+        audio.play();
+        boton.textContent = "Pausar";
     } else {
-      audio.pause();
-      boton.textContent = "Reproducir";
+        console.log("Musica en play")
+        audio.pause();
+        boton.textContent = "Reproducir";
     }
   });
