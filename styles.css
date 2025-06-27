@@ -92,6 +92,10 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   position: relative;
   z-index: 10;
@@ -229,7 +233,8 @@ body {
   opacity: 0;
   animation: fadeInMessage 2s ease-in-out 1s forwards;
   text-shadow: 0 0 10px rgba(232, 180, 240, 0.5);
-  padding-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 @media (min-width: 768px){
@@ -252,11 +257,19 @@ body {
   }
 }
 
+.player-fotos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
 .message-dedicatoria{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 35px;
 }
 .texto-dedicatoria{
   
@@ -303,8 +316,9 @@ body {
 }
 
 .title-reproductor{
-  color: white;
-  text-shadow: 0 0 10px rgba(239, 44, 44, 0.5);
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
 }
 
 .album-image{
