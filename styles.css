@@ -294,6 +294,17 @@ body {
   animation: fadeInMessage 2s ease-in-out 1s forwards;
 }
 
+.player-fotos{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px){
+  .player-fotos{
+    flex-direction: row;
+  }
+}
+
 .hearts {
   position: absolute;
   width: 100%;

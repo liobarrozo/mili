@@ -36,11 +36,18 @@ body {
   .imagenes{
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 325px;
+    height: 450px;
+    width: 290px;
     flex-wrap: wrap;
     gap: 25px;
   }
+
+  @media (min-width: 768px){
+    .imagenes{
+      width: 325px;
+    }
+  }
+
   .gallery img {
     width: 120px;
     height: auto;
