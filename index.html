@@ -6,6 +6,7 @@
     <title>Ojitos lindos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reproductor/styles.css">
+    <link rel="stylesheet" href="./gallery/index.css">
     <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
 
 </head>
@@ -83,42 +84,61 @@
         </div>
         
         
+        <div class="player-fotos">
+            <div class="music-player">
+                <h3 class="title-reproductor">Canciones que te dedico 💗</h3>
+                <div class="album-cover" id="albumCover"></div>
+                
+                <div class="song-info">
+                    <div class="song-title" id="songTitle">Cargando...</div>
+                    <div class="artist-name" id="artistName">Artista</div>
+                </div>
+        
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="time-info">
+                        <span id="currentTime">0:00</span>
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+        
+                <div class="controls">
+                    <button class="control-btn play-pause-btn" id="playPauseBtn">
+                        ▶️
+                    </button>
+                    <button class="control-btn next-btn" id="nextBtn">
+                        ⏭️
+                    </button>
+                </div>
+        
+                <div class="volume-container">
+                    <span>🔊</span>
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70">
+                </div>
+        
+                <audio id="audioPlayer" preload="metadata"></audio>
+            </div>
+            <div class="gallery">
+                <h3 class="titulo-galeria">Algunas de mis fotos favoritas ✨</h3>
+                <div class="imagenes">
+                    <img src="./image/mili1.jpeg" alt="Gato 1" />
+                    <img src="./image/mili2.jpeg" alt="Gato 2" />
+                    <img src="./image/mili3.jpeg" alt="Gato 3" />
+                    <img src="./image/mili4.jpeg" alt="Gato 4" />
+                </div>
+                
+              </div>
 
-        <div class="music-player">
-            <h3 class="title-reproductor">Canciones que te dedico 💗</h3>
-            <div class="album-cover" id="albumCover"></div>
-            
-            <div class="song-info">
-                <div class="song-title" id="songTitle">Cargando...</div>
-                <div class="artist-name" id="artistName">Artista</div>
-            </div>
-    
-            <div class="progress-container">
-                <div class="progress-bar" id="progressBar">
-                    <div class="progress" id="progress"></div>
+              <div class="modal" id="modal">
+                <span class="close" id="closeBtn">&times;</span>
+                <div class="modal-content" id="modalContent">
+                  <img src="" alt="Imagen ampliada" id="modalImage" />
                 </div>
-                <div class="time-info">
-                    <span id="currentTime">0:00</span>
-                    <span id="duration">0:00</span>
-                </div>
-            </div>
-    
-            <div class="controls">
-                <button class="control-btn play-pause-btn" id="playPauseBtn">
-                    ▶️
-                </button>
-                <button class="control-btn next-btn" id="nextBtn">
-                    ⏭️
-                </button>
-            </div>
-    
-            <div class="volume-container">
-                <span>🔊</span>
-                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70">
-            </div>
-    
-            <audio id="audioPlayer" preload="metadata"></audio>
+              </div>
         </div>
+        
 
         <div class="message-dedicatoria">
             <div class="texto-dedicatoria">
@@ -132,6 +152,7 @@
     
     </div>
     <script src="./reproductor/script.js"></script>
+    <script src="./gallery/index.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
